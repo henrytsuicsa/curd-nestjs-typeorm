@@ -1,7 +1,7 @@
 Changelog
 All notable changes to this project will be documented in this file.
 
-5.0.2 (2024-05-17)
+5.0.4 (2024-05-17)
 Features
 
 Updated to the NestJS version 10

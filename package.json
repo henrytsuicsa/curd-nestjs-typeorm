@@ -1,6 +1,6 @@
 {
   "name": "@htcsa/crud",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Nest CRUD for RESTful APIs",
   "license": "MIT",
   "workspaces": [
@@ -66,9 +66,9 @@
     "lerna": "7.2.0",
     "mysql": "2.18.1",
     "nodemon": "3.0.1",
-    "npm-check": "6.0.1",
+    "npm-check": "^3.2.10",
     "nps": "5.10.0",
-    "nps-utils": "1.7.0",
+    "nps-utils": "^1.0.2",
     "pg": "8.11.3",
     "pluralize": "8.0.0",
     "prettier": "3.0.3",
@@ -88,6 +88,6 @@
     "tslint-config-prettier": "1.18.0",
     "typeorm": "0.3.17",
     "typescript": "5.2.2",
-    "validate-commit-msg": "2.14.0"
+    "validate-commit-msg": "^1.1.3"
   }
 }
