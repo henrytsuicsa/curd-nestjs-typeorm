@@ -1,7 +1,7 @@
 {
   "name": "@htcsa/crud-util",
   "description": "NestJs CRUD for RESTful APIs - util",
-  "version": "5.0.3",
+  "version": "5.0.4-alpha.0",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -11,6 +11,10 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:henrytsuicsa/curd-nestjs-typeorm.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@htcsa:registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "typescript",

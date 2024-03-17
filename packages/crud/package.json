@@ -1,7 +1,7 @@
 {
   "name": "@htcsa/crud",
   "description": "NestJs CRUD for RESTful APIs",
-  "version": "5.0.2",
+  "version": "5.0.4-alpha.0",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -33,8 +33,8 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@htcsa/crud-request": "^5.0.2",
-    "@htcsa/crud-util": "^5.0.2",
+    "@htcsa/crud-request": "^5.0.4-alpha.0",
+    "@htcsa/crud-util": "^5.0.4-alpha.0",
     "deepmerge": "^3.2.0",
     "pluralize": "^8.0.0"
   },
