@@ -1,6 +1,6 @@
 {
   "name": "@htcsa/crud",
-  "version": "5.0.0",
+  "version": "5.0.2",
   "description": "Nest CRUD for RESTful APIs",
   "license": "MIT",
   "workspaces": [
@@ -13,6 +13,10 @@
     "rebuild": "yarn clean && yarn build",
     "build": "yarn s build",
     "clean": "yarn s clean",
+    "release": "commit-and-tag-version --tag-prefix v.",
+    "release:minor": "commit-and-tag-version --release-as minor --tag-prefix v.",
+    "release:patch": "commit-and-tag-version --release-as patch --tag-prefix v.",
+    "release:major": "commit-and-tag-version --release-as major --tag-prefix v.",
     "test": "npx jest --runInBand -c=jest.config.js packages/ --verbose",
     "test:coverage": "yarn test:all --coverage",
     "test:coveralls": "yarn test:coverage --coverageReporters=text-lcov | coveralls",
