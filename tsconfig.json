@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2018",
+    "sourceMap": true,
+    "allowJs": false,
+    "skipLibCheck": false,
+    "composite": true,
+    "baseUrl": "./packages",
+    "paths": {
+      "@htcsa/crud": ["crud/src"],
+      "@htcsa/crud-typeorm": ["crud-typeorm/src"],
+      "@htcsa/crud-request": ["crud-request/src"],
+      "@htcsa/curd-util": ["util/src"],
+      "@htcsa/crud/*": ["crud/src/*"],
+      "@htcsa/crud-typeorm/*": ["crud-typeorm/src/*"],
+      "@htcsa/crud-request/*": ["crud-request/src/*"],
+      "@htcsa/curd-util/*": ["util/src/*"],
+    }
+  },
+  "references": [
+    { "path": "packages/crud" },
+    { "path": "packages/crud-typeorm" },
+    { "path": "packages/crud-request" },
+    { "path": "packages/util" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@htcsa/crud-request",
+  "description": "NestJs CRUD for RESTful APIs - request query builder",
+  "version": "5.0.3",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:henrytsuicsa/curd-nestjs-typeorm.git"
+  },
+
+  "keywords": [
+    "typescript",
+    "typeorm",
+    "nest",
+    "nestjs",
+    "rest",
+    "restful",
+    "api",
+    "crud",
+    "crud-generator",
+    "http",
+    "request",
+    "request-query",
+    "requestquery",
+    "get",
+    "query",
+    "query-string",
+    "querystring",
+    "query-builder",
+    "querybuilder"
+  ],
+  "scripts": {
+    "build": "npx tsc -b"
+  },
+  "dependencies": {
+    "@htcsa/crud-util": "^5.0.3",
+    "qs": "^6.8.0"
+  }
+}
