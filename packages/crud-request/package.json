@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git@github.com:henrytsuicsa/curd-nestjs-typeorm.git"
   },
-
+  "publishConfig": {
+    "access": "public",
+    "@htcsa:registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "typescript",
     "typeorm",
