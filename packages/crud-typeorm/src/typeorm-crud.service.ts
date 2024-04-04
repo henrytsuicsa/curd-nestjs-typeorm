@@ -1,35 +1,43 @@
 import {
-    CreateManyDto,
-    CrudRequest,
-    CrudRequestOptions,
-    CrudService,
-    GetManyDefaultResponse,
-    JoinOption,
-    JoinOptions,
-    QueryOptions
+  CreateManyDto,
+  CrudRequest,
+  CrudRequestOptions,
+  CrudService,
+  GetManyDefaultResponse,
+  JoinOption,
+  JoinOptions,
+  QueryOptions,
 } from '@htcsa/crud';
 import {
-    ComparisonOperator, ParsedRequestParams,
-    QueryFilter,
-    QueryJoin,
-    QuerySort,
-    SCondition,
-    SConditionKey
+  ComparisonOperator,
+  ParsedRequestParams,
+  QueryFilter,
+  QueryJoin,
+  QuerySort,
+  SCondition,
+  SConditionKey,
 } from '@htcsa/crud-request';
 import {
-    ClassType,
-    hasLength,
-    isArrayFull, isNil,
-    isNull, isObject,
-    isUndefined,
-    objKeys
+  ClassType,
+  hasLength,
+  isArrayFull,
+  isNil,
+  isNull,
+  isObject,
+  isUndefined,
+  objKeys,
 } from '@htcsa/crud-util';
 import { oO } from '@zmotivat0r/o0';
 import { plainToClass } from 'class-transformer';
 import {
-    Brackets, ConnectionOptions, DeepPartial, EntityMetadata, ObjectLiteral,
-    Repository,
-    SelectQueryBuilder, WhereExpression
+  Brackets,
+  ConnectionOptions,
+  DeepPartial,
+  EntityMetadata,
+  ObjectLiteral,
+  Repository,
+  SelectQueryBuilder,
+  WhereExpression,
 } from 'typeorm';
 
 interface IAllowedRelation {
@@ -458,9 +466,10 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
         );
   }
 
-  protected getEntityColumns(
-    entityMetadata: EntityMetadata,
-  ): { columns: string[]; primaryColumns: string[] } {
+  protected getEntityColumns(entityMetadata: EntityMetadata): {
+    columns: string[];
+    primaryColumns: string[];
+  } {
     const columns =
       entityMetadata.columns.map((prop) => prop.propertyPath) ||
       /* istanbul ignore next */ [];
@@ -850,7 +859,7 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
       ...this.entityPrimaryColumns,
     ].map((col) => `${this.alias}.${col}`);
 
-    return select;
+    return [...new Set(select)];
   }
 
   protected getSort(query: ParsedRequestParams, options: QueryOptions) {
